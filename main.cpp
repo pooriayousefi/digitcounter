@@ -11,7 +11,7 @@ int main()
 	// digit counter unit test
 	auto digitcounter_unit_test = []<std::integral T>(T value, std::size_t expected_result)
 	{
-		if (how_many_digits_does_this_integer_have(value) == expected_result)
+		if (how_many_digits_does(value).have() == expected_result)
 			return true;
 		else
 			return false;
